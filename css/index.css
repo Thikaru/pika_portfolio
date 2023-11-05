@@ -1,0 +1,36 @@
+#container{
+	display: grid;
+	grid-template-rows: 200px;
+	grid-template-columns: 100px 1fr 100px;
+}
+
+#left-sidebar{
+	/* grid-column: 1/6; */
+	background-color: antiquewhite;
+}
+#right-sidebar{
+	/* grid-column: 1/6; */
+	background-color: antiquewhite;
+}
+#main-article{
+	/* grid-column: 4/6; */
+	background-color: aqua;
+}
+
+/* スマホサイズ */
+@media screen and (max-width:768px){
+	#container{
+		display: grid;
+		/* grid-template-rows: 0px; */
+		grid-template-columns: auto 1fr auto;
+	}
+	#left-sidebar{
+		background-color: antiquewhite;
+	}
+	#right-sidebar{
+		background-color: antiquewhite;
+	}
+	#main-article{
+		background-color: aqua;
+	}
+}

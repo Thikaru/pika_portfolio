@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
@@ -30,4 +30,30 @@
 	<!-- スクリプトを読み込む -->
 	<script src="../js/index.js"></script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    function redirect() {
+      // Instagramディープリンクにリダイレクト
+      window.location.href = "instagram://tag?name=travel";
+
+      // フォールバックのための遅延リダイレクト
+      setTimeout(function() {
+        window.location.href = "https://www.instagram.com/explore/tags/travel/";
+      }, 500); // 0.5秒待つ
+    }
+  </script>
+</head>
+
+<body onload="redirect()">
+  <p>Redirecting to Instagram...</p>
+</body>
+
 </html>
